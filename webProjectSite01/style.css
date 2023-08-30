@@ -7,6 +7,19 @@ h1{
   color: aliceblue;
 }
 
+body{
+  background-color: #68477e;
+}
+.animeGirl{
+  position: absolute;
+  right: 93%;
+  z-index: -1;
+  transform: scale(2);
+}
+.iconPage{
+  transform: scale(0.7);
+}
+
 .menu{
   flex-direction: row;
   justify-content: end;
@@ -18,7 +31,7 @@ header {
   display: flex;
   position: fixed;
   width: 100%;
-  padding: 20px 100px;
+  padding: 10px 100px;
   align-items: center;
   z-index: 99;
 }
@@ -46,7 +59,7 @@ header {
   width: 65rem;
   position: absolute;
   top: 160px;
-  left: 14%;
+  left: 23%;
 
 }
 
@@ -58,6 +71,7 @@ header {
   height: 10rem;
   width: 15rem;
   overflow-wrap: break-word;
+ 
 }
 
 #cardG1{
@@ -67,6 +81,7 @@ header {
   left: 5%;
   height: 10rem;
   width: 15rem;
+  transition: all 0.5s;
 }
 
 #cardG1:hover{
@@ -81,6 +96,7 @@ header {
   left: 5%;
   height: 10rem;
   width: 15rem;
+  transition: all 0.5s;
 }
 
 #cardG2:hover{
@@ -104,6 +120,7 @@ header {
   left: 55%;
   height: 96px;
   width: 12rem;
+  transition: all 0.5s;
 }
 
 #card1:hover{
@@ -118,6 +135,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
+  transition: all 0.5s;
 }
 
 #card2:hover{
@@ -132,6 +150,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
+  transition: all 0.5s;
 }
 
 #card3:hover{
@@ -146,6 +165,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
+  transition: all 0.5s;
 }
 
 #card4:hover{
@@ -160,6 +180,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
+  transition: all 0.5s;
 }
 
 #card5:hover{
@@ -174,6 +195,8 @@ header {
   width: 100%;
   position: absolute;
   top: 1000px;
+  background-image: url(./assets/backgroundSlider.jpg);
+  
 }
 
 main {
@@ -210,8 +233,9 @@ img {
 
 .swiper {
   height: 500px;
-  left: 25%;
+  left: 45%;
   top: -200px;
+  transition: all 0.5s;
 }
 
 .swiper-slide {
@@ -219,6 +243,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 @media (max-width: 450px) {
@@ -229,16 +254,16 @@ img {
 
 #co_page3{
   background-color: rgb(207, 207, 207);
-  height: 38rem;
+  height: 33rem;
   width: 100%;
   position: absolute;
-  top: 1700px;
+  top: 1620px;
 }
 
 #cardR1{
   background-color: rgb(95, 95, 95);
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 25%;
   height: 20rem;
   width: 12rem;
@@ -258,7 +283,7 @@ width: 100%;
 #cardR2{
   background-color: rgb(95, 95, 95);
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 40%;
   height: 20rem;
   width: 12rem;
@@ -277,7 +302,7 @@ width: 100%;
 #cardR3{
   background-color: rgb(95, 95, 95);
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 55%;
   height: 20rem;
   width: 12rem;
@@ -296,7 +321,7 @@ width: 100%;
 #cardR4{
   background-color: rgb(95, 95, 95);
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 70%;
   height: 20rem;
   width: 12rem;
@@ -315,11 +340,31 @@ width: 100%;
 #baseboard{
 
   background-color: rgb(43, 43, 43);
-  height: 6rem; 
+  height: 8rem; 
   width: 100%;
   position: absolute;
-  top: 2220px;
- 
+  top: 2140px;
+  color: white;
+}
+
+#baseboard p{
+  position: absolute;
+  width: 300px;
+  font-size: 1.2rem;
+  left: 15px;
+  top: 15px;
+}
+
+#baseboard ul{
+  position: absolute;
+  top: 15px;
+  left: 80%;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+#baseboard li{
+  padding-bottom: 15px;
 }
 
 h3{
@@ -332,4 +377,53 @@ h3{
   font-size: 2rem;
   border-bottom: 2px solid rgb(150, 131, 219);
   padding-right: 69.1%;
+}
+
+.fa-magnifying-glass{
+  position: absolute;
+  left: 80%;
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.fa-crown{
+  position: absolute;
+  left: 70%;
+  transform: scale(1.6);
+  transition: all 0.5s;
+}
+
+.fa-bookmark{
+  position: absolute;
+  left: 83%;
+  transform: scale(1.6);
+  transition: all 0.5s;
+}
+
+
+
+.fa-bookmark:hover{
+  transform: scale(1.8);
+}
+.fa-user:hover{
+  transform: scale(1.8);
+}
+.fa-crown:hover{
+  transform: scale(1.8);
+}
+.fa-magnifying-glass:hover{
+  transform: scale(1.8);
+}
+
+
+.fa-user{
+  position: absolute;
+  left: 86%;
+  transform: scale(1.6);
+  transition: all 0.5s;
+
+}
+
+.fa-bookmark,.fa-crown,.fa-magnifying-glass,.fa-user:hover {
+cursor: pointer;
 }
