@@ -185,7 +185,7 @@ main {
 
 .swiper-slide:hover{
   cursor: pointer;
-  transform: scale(1.001);
+  transform: scale(1.009);
 }
 
 #imgMid01{
