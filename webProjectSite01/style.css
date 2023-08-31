@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1{
@@ -16,6 +17,8 @@ body{
   z-index: -1;
   transform: scale(2);
 }
+
+
 .iconPage{
   transform: scale(0.7);
 }
@@ -49,19 +52,26 @@ header {
   text-decoration: none;
   font-size: 1.2rem;
   margin-left: 20px;
+  transition:  0.5s;
+  padding: 20px;
 }
 
+.nave a:hover{
+  background-color: #8888883a;
+}
 
 #co_page1{
-
+  display: flex;
   background-color: black;
-  height: 50rem;
-  width: 65rem;
+  height: 100%;
+  width: 69%;
   position: absolute;
   top: 160px;
   left: 23%;
 
 }
+
+
 
 .cardGTxt{
   color: white;
@@ -70,19 +80,23 @@ header {
   left: 250px;
   height: 10rem;
   width: 15rem;
-  overflow-wrap: break-word;
+ overflow-wrap: break-word;
  
 }
+
+
 
 #cardG1{
   background-color: rgb(95, 95, 95);
   position: absolute;
   top: 150px;
   left: 5%;
-  height: 10rem;
-  width: 15rem;
-  transition: all 0.5s;
+  height: 10%;
+  width: 15%;
+  transition: 0.5s;
 }
+
+
 
 #cardG1:hover{
   cursor: pointer;
@@ -94,9 +108,9 @@ header {
   position: absolute;
   top: 60%;
   left: 5%;
-  height: 10rem;
-  width: 15rem;
-  transition: all 0.5s;
+  height: 10%;
+  width: 15%;
+  transition:  0.5s;
 }
 
 #cardG2:hover{
@@ -114,13 +128,12 @@ header {
 }
 
 #card1{
-  background-color: rgb(95, 95, 95);
   position: absolute;
   top: 150px;
   left: 55%;
-  height: 96px;
+  height: 6rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 #card1:hover{
@@ -135,7 +148,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 #card2:hover{
@@ -150,7 +163,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition:  0.5s;
 }
 
 #card3:hover{
@@ -165,7 +178,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 #card4:hover{
@@ -180,7 +193,7 @@ header {
   left: 55%;
   height: 6rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition:  0.5s;
 }
 
 #card5:hover{
@@ -191,7 +204,7 @@ header {
 
 #co_page2{
   background-color: rgb(75, 12, 147);
-  height: 36rem;
+  height: 73%;
   width: 100%;
   position: absolute;
   top: 1000px;
@@ -199,12 +212,7 @@ header {
   
 }
 
-main {
-  height: 100vh;
-  width: 100%;
-  max-width: 1000px;
-  margin-top: 250px;
-}
+
 
 .swiper-slide:hover{
   cursor: pointer;
@@ -232,10 +240,11 @@ img {
 }
 
 .swiper {
-  height: 500px;
-  left: 45%;
-  top: -200px;
-  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-top: 8%;
+  transition: 0.5s;
 }
 
 .swiper-slide {
@@ -245,6 +254,7 @@ img {
   justify-content: center;
   transition: all 0.5s;
 }
+
 
 @media (max-width: 450px) {
   .swiper {
@@ -267,7 +277,7 @@ img {
   left: 25%;
   height: 20rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition:  0.5s;
 }
 
 #imgDown01{
@@ -287,7 +297,7 @@ width: 100%;
   left: 40%;
   height: 20rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 #imgDown02{
@@ -306,7 +316,7 @@ width: 100%;
   left: 55%;
   height: 20rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 #imgDown03{
@@ -325,7 +335,7 @@ width: 100%;
   left: 70%;
   height: 20rem;
   width: 12rem;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 #imgDown04{
@@ -340,7 +350,7 @@ width: 100%;
 #baseboard{
 
   background-color: rgb(43, 43, 43);
-  height: 8rem; 
+  height: 8.5rem; 
   width: 100%;
   position: absolute;
   top: 2140px;
@@ -368,7 +378,7 @@ width: 100%;
 }
 
 h3{
-  width:  300px;
+  width:  50%;
   height: 50px;
   position: absolute;
   top: 6%;
@@ -376,7 +386,6 @@ h3{
   color: aliceblue;
   font-size: 2rem;
   border-bottom: 2px solid rgb(150, 131, 219);
-  padding-right: 69.1%;
 }
 
 .fa-magnifying-glass{
@@ -390,14 +399,14 @@ h3{
   position: absolute;
   left: 70%;
   transform: scale(1.6);
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 .fa-bookmark{
   position: absolute;
   left: 83%;
   transform: scale(1.6);
-  transition: all 0.5s;
+  transition:  0.5s;
 }
 
 
@@ -420,7 +429,7 @@ h3{
   position: absolute;
   left: 86%;
   transform: scale(1.6);
-  transition: all 0.5s;
+  transition:  0.5s;
 
 }
 
