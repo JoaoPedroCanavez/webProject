@@ -1,233 +1,153 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1 {
   color: aliceblue;
 }
 
-body{
-  background-color: #68477e;
-}
-.animeGirl{
-  position: absolute;
-  right: 93%;
-  z-index: -1;
-  transform: scale(2);
+body {
+  background-color: #451175;
 }
 
 
-.iconPage{
+
+
+.iconPage {
   transform: scale(0.7);
-}
-
-.menu{
-  flex-direction: row;
-  justify-content: end;
 }
 
 
 header {
-  background-color: #000000;
+  background-color: #120035;
   display: flex;
-  position: fixed;
-  width: 100%;
-  padding: 10px 100px;
+  justify-content: space-around;
   align-items: center;
-  z-index: 99;
-}
-
-
-.nave {
-  color: aliceblue;
-  transform: translate(44px, 4px); 
-  
-}
-
-
-.nave a{
-  color: aliceblue;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin-left: 20px;
-  transition:  0.5s;
+  width: auto;
   padding: 20px;
+
 }
 
-.nave a:hover{
-  background-color: #8888883a;
-}
-
-#co_page1{
+.links {
   display: flex;
-  background-color: black;
-  height: 100%;
-  width: 69%;
-  position: absolute;
-  top: 160px;
-  left: 23%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
 
+.links a {
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.links a:hover {
+  background-color: #ffffff5d;
+}
+
+.icons {
+  display: flex;
+  gap: 3rem;
+}
+
+.links a {
+  color: rgb(244, 240, 247);
+  text-decoration: none;
 }
 
 
 
-.cardGTxt{
+#card1 {
+
+  height: 6rem;
+  width: 12rem;
+  transition: 0.5s;
+}
+
+#card1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#card2 {
+  background-color: rgb(95, 95, 95);
+
+  height: 6rem;
+  width: 12rem;
+  transition: 0.5s;
+}
+
+#card2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#card3 {
+  background-color: rgb(95, 95, 95);
+  height: 6rem;
+  width: 12rem;
+  transition: 0.5s;
+}
+
+#card3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#card4 {
+  background-color: rgb(95, 95, 95);
+  height: 6rem;
+  width: 12rem;
+  transition: 0.5s;
+}
+
+#card4:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#card5 {
+  background-color: rgb(95, 95, 95);
+  height: 6rem;
+  width: 12rem;
+  transition: 0.5s;
+}
+
+#card5:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+.co_page2 {
+  background-color: #120035;
+  padding: 3rem;
+}
+
+.co_page2 h3 {
   color: white;
-  position: absolute;
-  top: 0px;
-  left: 250px;
-  height: 10rem;
-  width: 15rem;
- overflow-wrap: break-word;
- 
+  margin-left: 30%;
+  padding: 15px;
+  font-size: 1.6 rem;
 }
 
 
 
-#cardG1{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 150px;
-  left: 5%;
-  height: 10%;
-  width: 15%;
-  transition: 0.5s;
-}
-
-
-
-#cardG1:hover{
+.swiper-slide:hover {
   cursor: pointer;
-  transform: scale(1.1);
 }
 
-#cardG2{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 60%;
-  left: 5%;
-  height: 10%;
-  width: 15%;
-  transition:  0.5s;
-}
-
-#cardG2:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.cardTxt{
-  color: white;
-  position: absolute;
-  top: 0px;
-  left: 210px;
-  height: 6rem;
-  width: 16rem;
-}
-
-#card1{
-  position: absolute;
-  top: 150px;
-  left: 55%;
-  height: 6rem;
-  width: 12rem;
-  transition: 0.5s;
-}
-
-#card1:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-#card2{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 260px;
-  left: 55%;
-  height: 6rem;
-  width: 12rem;
-  transition: 0.5s;
-}
-
-#card2:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-#card3{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 370px;
-  left: 55%;
-  height: 6rem;
-  width: 12rem;
-  transition:  0.5s;
-}
-
-#card3:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-#card4{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 480px;
-  left: 55%;
-  height: 6rem;
-  width: 12rem;
-  transition: 0.5s;
-}
-
-#card4:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-#card5{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 590px;
-  left: 55%;
-  height: 6rem;
-  width: 12rem;
-  transition:  0.5s;
-}
-
-#card5:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-
-#co_page2{
-  background-color: rgb(75, 12, 147);
-  height: 73%;
-  width: 100%;
-  position: absolute;
-  top: 1000px;
-  background-image: url(./assets/backgroundSlider.jpg);
-  
-}
-
-
-
-.swiper-slide:hover{
-  cursor: pointer;
-  transform: scale(1.009);
-}
-
-#imgMid01{
+#imgMid01 {
   width: 70%;
 }
 
-#imgMid02{
+#imgMid02 {
   width: 70%;
 }
 
-#imgMid03{
+#imgMid03 {
   width: 70%;
 }
 
@@ -236,14 +156,13 @@ span {
 }
 
 img {
-  box-shadow: 0 1px 2px #0003;
+  box-shadow: 0 1px 2px #120035;
 }
 
 .swiper {
   display: flex;
   align-items: center;
   width: 60%;
-  margin-top: 8%;
   transition: 0.5s;
 }
 
@@ -262,237 +181,382 @@ img {
   }
 }
 
-#co_page3{
+
+
+.co_page3 {
+  height: 100%;
+  padding: 3rem;
+  background-color: #451175;
+}
+
+#cards {
   background-color: rgb(207, 207, 207);
-  height: 33rem;
+  align-items: center;
+  padding: 100px;
   width: 100%;
-  position: absolute;
-  top: 1620px;
-}
-
-#cardR1{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 100px;
-  left: 25%;
-  height: 20rem;
-  width: 12rem;
-  transition:  0.5s;
-}
-
-#imgDown01{
-width: 100%;
 
 }
 
-  #cardR1:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-
-#cardR2{
-  background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 100px;
-  left: 40%;
+#cardR1 {
+  background-color: rgb(255, 0, 0);
+  background-image: url(./assets/down01.jpg);
+  background-size: cover;
   height: 20rem;
   width: 12rem;
   transition: 0.5s;
 }
 
-#imgDown02{
+
+#imgDown01 {
   width: 100%;
+
 }
 
-#cardR2:hover{
+.card-content:hover {
+  opacity: 1;
+  transform: translateY(0);
   cursor: pointer;
   transform: scale(1.1);
 }
 
-#cardR3{
+#cardR2 {
   background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 100px;
-  left: 55%;
+  background-image: url(./assets/down02.jpg);
+  background-size: cover;
   height: 20rem;
   width: 12rem;
   transition: 0.5s;
 }
 
-#imgDown03{
+#imgDown02 {
   width: 100%;
 }
 
-#cardR3:hover{
+#cardR2:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-#cardR4{
+#cardR3 {
   background-color: rgb(95, 95, 95);
-  position: absolute;
-  top: 100px;
-  left: 70%;
+  background-image: url(./assets/down03.jpg);
+  background-size: cover;
   height: 20rem;
   width: 12rem;
   transition: 0.5s;
 }
 
-#imgDown04{
+#imgDown03 {
   width: 100%;
 }
 
-#cardR4:hover{
+#cardR3:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-#baseboard{
+#cardR4 {
+  background-color: rgb(95, 95, 95);
+  background-image: url(./assets/down04.jpg);
+  background-size: cover;
+  height: 20rem;
+  width: 12rem;
+  transition: 0.5s;
+}
 
-  background-color: rgb(43, 43, 43);
-  height: 8.5rem; 
+#imgDown04 {
   width: 100%;
-  position: absolute;
-  top: 2140px;
-  color: white;
 }
 
-#baseboard p{
-  position: absolute;
-  width: 300px;
-  font-size: 1.2rem;
-  left: 15px;
-  top: 15px;
+#cardR4:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
-#baseboard ul{
-  position: absolute;
-  top: 15px;
-  left: 80%;
-  font-size: 20px;
-  list-style-type: none;
-}
 
-#baseboard li{
-  padding-bottom: 15px;
-}
 
-h3{
-  width:  50%;
-  height: 50px;
-  position: absolute;
-  top: 6%;
-  left: 2%;
-  color: aliceblue;
-  font-size: 2rem;
-  border-bottom: 2px solid rgb(150, 131, 219);
-}
+.fa-magnifying-glass {
 
-.fa-magnifying-glass{
-  position: absolute;
-  left: 80%;
   transform: scale(1.5);
   transition: all 0.5s;
 }
 
-.fa-crown{
-  position: absolute;
-  left: 70%;
+.fa-crown {
+
   transform: scale(1.6);
   transition: 0.5s;
 }
 
-.fa-bookmark{
-  position: absolute;
-  left: 83%;
+.fa-bookmark {
+
   transform: scale(1.6);
-  transition:  0.5s;
+  transition: 0.5s;
 }
 
 
 
-.fa-bookmark:hover{
-  transform: scale(1.8);
-}
-.fa-user:hover{
-  transform: scale(1.8);
-}
-.fa-crown:hover{
-  transform: scale(1.8);
-}
-.fa-magnifying-glass:hover{
+.fa-bookmark:hover {
   transform: scale(1.8);
 }
 
+.fa-user:hover {
+  transform: scale(1.8);
+}
 
-.fa-user{
-  position: absolute;
-  left: 86%;
+.fa-crown:hover {
+  transform: scale(1.8);
+}
+
+.fa-magnifying-glass:hover {
+  transform: scale(1.8);
+}
+
+
+.fa-user {
+
   transform: scale(1.6);
-  transition:  0.5s;
+  transition: 0.5s;
 
 }
 
-.fa-bookmark,.fa-crown,.fa-magnifying-glass,.fa-user:hover {
-cursor: pointer;
+.fa-bookmark,
+.fa-crown,
+.fa-magnifying-glass,
+.fa-user:hover {
+  cursor: pointer;
 }
 
-#secao-orcamento{
+.co_page3 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
+
+
+.co_page1 {
   height: 100vh;
   padding: 3rem;
-  
-  }
-  
-  #form-orcamento{
+}
+
+
+.conjunto1 {
+  background-color: #120035;
+  display: grid;
+  max-width: 1200px;
+  padding: 5rem 1rem 4rem 4rem;
+  border-radius: .5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem auto;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.conjunto1 p {
+  margin-top: 20px;
+}
+
+.conjunto1 img {
+  transition: 0.5s;
+}
+
+.conjunto1 img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+.card {
+  max-width: 280px;
+  height: 380;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.card:hover .card-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+ul {
+  list-style: none;
+}
+
+#secao-projeto ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+}
+
+
+.card-image-wrapper {
+  height: 380px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  /*contendo imagem*/
+  border-radius: 1rem;
+}
+
+/*Esse card content pode deixar*/
+
+.card-content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 25%;
+  left: .5rem;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 1s, transform 1s;
+
+}
+
+.card h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  color: rgb(255, 255, 255);
+
+}
+
+.card p {
+  color: #ffffff;
+}
+
+.card img {
+  opacity: 0.7;
+}
+
+#secao-orcamento {
+  height: 100%;
+  padding: 3rem;
+  background-color: #380d65;
+
+}
+
+#form-orcamento {
   color: white;
   display: grid;
   background-color: #000000;
   max-width: 500px;
   border-radius: .5rem;
   padding: 2rem;
-  margin-top: 150px;
-  margin-left: 30rem;
+  margin: 2rem auto;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  
-  }
-  
-  .campo{
-      display: flex;
-      flex-direction: column;
-      
-  }
-  
-  .linha{
-      grid-column: 1/3;    
-  }
-  
-  input[type = "text"],
-  input[type = "number"],
-  select
-  {
-  
-      color: white;
-      background-color: rgb(68, 68, 68);
-      border: none;
-      padding: .5rem;
-      border-radius: 1rem;
-      outline: none;
-  
-  }
-  
-  input[type = "checkbox"],
-  input[type = "range"],
-  input[type = "radio"]{
-      accent-color: #00a6ff;
-  }
-  
-  input:focus{
-      border: solid 1px #00a6ff;
-  }
 
-  button{
-    padding: 15px;
-    border-radius: 15px;
-  }
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.linha {
+  grid-column: 1/3;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+
+  color: white;
+  background-color: rgb(68, 68, 68);
+  border: none;
+  padding: .5rem;
+  border-radius: 1rem;
+  outline: none;
+
+}
+
+input[type="checkbox"],
+input[type="range"],
+input[type="radio"] {
+  accent-color: #00a6ff;
+}
+
+input:focus {
+  border: solid 1px #00a6ff;
+}
+
+
+button {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  transition: 0.5s;
+
+}
+
+button:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.baseboard {
+  padding: 35px;
+  background-color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.baseboard p {
+  color: #380d65;
+  width: 20%;
+}
+
+.baseboard li {
+  margin: 10px;
+  color: #380d65;
+}
+
+.conjunto1 img {
+  border-radius: 5px;
+}
+
+.conjunto1 p {
+  color: white;
+}
+
+.botao {
+  border: none;
+  border-radius: 10px;
+  background-color: #000000;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.botao:hover {
+  color: black;
+  background-color: white;
+}
+
+.tr {
+  color: white;
+  margin-bottom: 30px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding: 10px;
+  font-size: 2rem;
+
+}
