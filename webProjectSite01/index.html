@@ -20,7 +20,7 @@
 
     <div class="links">
       <a href="#">Noticias</a>
-      <a href="#">Em alta</a>
+      <a href="#co_page3">Em alta</a>
       <a href="#">Mangá</a>
     </div>
 
@@ -39,7 +39,7 @@
 
 
   <div class="co_page1">
-
+<h2>Mangas Mais famosos</h2>
 
     <div class="conjunto1">
 
@@ -186,14 +186,9 @@
     </ul>
   </div>
 
-  <section id="secao-orcamento">
+  <section id="votacao">
 
-    <form id="form-orcamento" action="">
-
-      <div class="campo linha">
-        <h2>Vote no seu anime:</h2>
-      </div>
-
+    <form class="form_voto" action="">
       <div class="campo linha">
         <label for="nome">Nome:</label>
         <input id="nome" type="text">
@@ -204,11 +199,18 @@
         <label for="email">E-mail:</label>
         <input id="email" type="text">
       </div>
+    </form>
 
+    <div id="votar">
+    <form class="form_voto" action="">
+
+      <div class="campo linha">
+        <h2>Classifique o anime</h2>
+      </div>
 
       <div class="campo">
 
-        <label for="tipo">Anime favorito</label>
+        <label for="tipo">Anime escolhido</label>
         <select name="tipo" id="tipo">
           <option value=""> Escolha.....</option>
           <option value="">Naruto</option>
@@ -219,7 +221,7 @@
 
 
       <div class="campo linh">
-        <label for="qtde ">0 a 5 estrelas para o anime</label>
+        <label for="qtde ">Indicaria para outros(0 a 5)</label>
         <input id="qtde" type="number" min="1" max="5">
       </div>
 
@@ -234,7 +236,7 @@
 
       <div class=" linha">
         <input type="checkbox" id="js">
-        <label for="js">Quero receber Noticias</label>
+        <label for="js">Assistiria novamente</label>
       </div>
 
 
@@ -247,7 +249,56 @@
 
     </form>
 
+    <form class="form_voto" action="">
+
+      <div class="campo linha">
+        <h2>Classifique o Manga</h2>
+      </div>
+
+      <div class="campo">
+
+        <label for="tipo">Manga escolhido</label>
+        <select name="tipo" id="tipo">
+          <option value=""> Escolha.....</option>
+          <option value="">Naruto</option>
+          <option value="">One piece</option>
+          <option value="">Akira</option>
+        </select>
+      </div>
+
+
+      <div class="campo linh">
+        <label for="qtde ">Indicaria para outros(0 a 5)</label>
+        <input id="qtde" type="number" min="1" max="5">
+      </div>
+
+
+      <div class="campo linha">
+        <label for="prazo">Quanto gostou:</label>
+        <input type="range" id="prazo">
+      </div>
+
+
+
+
+      <div class=" linha">
+        <input type="checkbox" id="js">
+        <label for="js">Leria novamente</label>
+      </div>
+
+
+      <output> 0 Estrelas</output>
+
+
+      <div class="campo linha">
+        <button>Enviar</button>
+      </div>
+
+    </form>
+  </div>
+
   </section>
+
 
   <div class="baseboard">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati a repudiandae, nostrum dolorem
@@ -260,26 +311,6 @@
     </ul>
 
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <script src="https://kit.fontawesome.com/b741e10b6e.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
