@@ -30,20 +30,3 @@ campoPrazo.addEventListener("input",   function() {
   calcular()
 })
 
-
-campoQtd.addEventListener("change" , calcular )
-
-function calcular(){
-
-console.log("Calcular Estrelas")
-let qtde = campoQtd.value
-let valor = qtde * 1;
-
-if(campoJs.checked){
-
-  alert("Voce recebera o alerta no email")
-  
-  }
-
-output.innerHTML=  `${valor} Estrelas`
-}
