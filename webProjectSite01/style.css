@@ -5,8 +5,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1 a{
   color: aliceblue;
+  text-decoration: none;
 }
 
 body {
@@ -26,11 +27,16 @@ header {
   padding: 20px;
 }
 
+#site-icon{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 3rem;
 }
 
 .links a {
@@ -234,6 +240,7 @@ ul {
   opacity: 0;
   transform: translateY(2rem);
   transition: opacity 1s, transform 1s;
+  text-shadow: 1px 1px 2px black;
 
 }
 
